@@ -1,6 +1,8 @@
+import './globals.css';
+
 export const metadata = {
   title: 'Leph Maat',
-  description: 'Sistema de consulta en línea.',
+  description: 'Red de Reputación Descentralizada',
 };
 
 export default function RootLayout({ children }) {
