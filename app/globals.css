@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
+body {
+  background: #0A0A0A;
+  color: #F5F5F5;
+}
+
+.gold-glow {
+  text-shadow: 0 0 20px #D4AF37;
+}
