@@ -7,8 +7,53 @@
 body {
   background: #0A0A0A;
   color: #F5F5F5;
+  font-family: 'Inter', sans-serif;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
 }
 
 .gold-glow {
   text-shadow: 0 0 20px #D4AF37;
+}
+
+.rune-glow {
+  text-shadow:
+    0 0 2px rgba(212, 175, 55, 0.9),
+    0 0 18px rgba(159, 75, 255, 0.5),
+    0 0 34px rgba(0, 229, 255, 0.3);
+}
+
+.chrome-text {
+  background: linear-gradient(180deg, #F5F5F5 0%, #D8D8D8 35%, #9A9A9A 55%, #E8E8E8 75%, #C0C0C0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gold-text {
+  background: linear-gradient(180deg, #F4E4A6 0%, #D4AF37 45%, #9C7A1E 55%, #F4E4A6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glow-violet-electric {
+  box-shadow: 0 0 30px -5px rgba(159, 75, 255, 0.4), 0 0 60px -20px rgba(0, 229, 255, 0.3);
+}
+
+.border-glow:focus {
+  outline: none;
+  border-color: #D4AF37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15), 0 0 20px -5px rgba(159, 75, 255, 0.5);
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.rune-pulse {
+  animation: pulse-glow 3s ease-in-out infinite;
 }
